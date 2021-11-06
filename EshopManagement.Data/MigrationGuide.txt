@@ -1,0 +1,6 @@
+﻿Update-Database -Project EshopManagement.Data -StartUp EshopManagement.WebApi -Verbose
+
+Add-Migration EshopManagement00001 -Project  EshopManagement.Data -StartUp EshopManagement.WebApi -Verbose
+
+
+Script-Migration -From EshopManagement00001 -Project EshopManagement.Data -StartUp EshopManagement.WebApi -Verbose
